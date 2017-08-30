@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load staticfiles %}
+{% block title %}
+    Events - {{ block.super }}
+{% endblock title %}
+<head>
+<!--<link rel="stylesheet" href="{% static 'css/style.css' %}" />-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+
+{% load static %}
+<img src ="{% static "letsgo/5K.jpeg" %}" alt="My image"/>
+{% block content %}
+    <img src ="{% static "images/category.png" %}" alt="categories"/>
+    {% for event in events %}
+
+    <h2>
+        <font size= "10" face="'Avenir Next'"> <a href = "{% url 'description' slug=event.slug %}" > {{ event.name }}  </a> </font>
+        <!--<img src = "{{ MEDIA_URL }} {{event.photo}}" />-->
+        <div class=box> <img src="{{event.photo_url}}"/> </div>
+        <p> {{ event.description }}</p>
+    </h2>
+    <!--<img src="{{ MEDIA_URL }}{{event.photo}}"/>-->
+
+    {% endfor %}
+
+{% endblock content %}
+</body>

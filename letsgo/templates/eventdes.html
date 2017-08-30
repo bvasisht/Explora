@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load staticfiles %}
+{% block title %}
+    {{ event.name }} - {{ block.super }}
+{% endblock title %}
+<head>
+<link rel="stylesheet" href="{% static 'css/style1.css' %}" />
+</head>
+
+{% block content %}
+    <h1 class= name> {{event.name}} </h1>
+    <h2 class = host> {{event.host}} </h2>
+    <h3 class = time> {{event.time}} </h3>
+    <h3 class = date> {{event.date}} </h3>
+    <h3 class = location> {{ event.location }}</h3>
+    <h4 class = price>
+      {% if event.price == 0 %}
+          Free
+      {%else%}
+        {{event.price}}
+      {% endif %}
+    </h4>
+    <p class = blurb> {{event.blurb}} </p>
+    <p class = description> {{event.description}} </p>
+
+{% endblock content %}

@@ -1,0 +1,76 @@
+body{
+        background-color: white;
+        padding-left: 15px;
+}
+
+.name {
+  background-color: #d3d3d3;
+  color:black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+  font-face: "Avenir Next";
+  height: 200px;
+  align: center;
+  width: 80%;
+}
+
+.host {
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+}
+.time {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+}
+.date{
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+}
+.location {
+  background-color: #50E3D9;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+  width: 25%;
+}
+.price {
+  background-color: #50E3D9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+  height: 200px;
+  width: 25%;
+}
+.blurb {
+  background-color: #50E3D9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+  height: 200px;
+  width: 25%;
+}
+.description {
+  background-color: #50E3D9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 50%;
+  font-face: "Avenir Next";
+  height: 200px;
+  width: 25%;
+}
